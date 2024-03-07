@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ae57f5082226217a92f096804224819c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ae57f5082226217a92f096804224819c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ae57f5082226217a92f096804224819c = L.map(
+                "map_ae57f5082226217a92f096804224819c",
+                {
+                    center: [58.603, 49.667],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0b8bcd805d5b16820c003aedfd31991f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_0b8bcd805d5b16820c003aedfd31991f.addTo(map_ae57f5082226217a92f096804224819c);
+        
+    
+            var marker_05df625d8f2a31889dbd2b301691ed2e = L.marker(
+                [58.604313, 49.665849],
+                {}
+            ).addTo(map_ae57f5082226217a92f096804224819c);
+        
+    
+        var popup_7796b12600c0b80f7d2bd7d8190cb6e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fee682652702f4275524f4880c5729a7 = $(`<div id="html_fee682652702f4275524f4880c5729a7" style="width: 100.0%; height: 100.0%;"><b>Корпус №2</b></div>`)[0];
+                popup_7796b12600c0b80f7d2bd7d8190cb6e9.setContent(html_fee682652702f4275524f4880c5729a7);
+            
+        
+
+        marker_05df625d8f2a31889dbd2b301691ed2e.bindPopup(popup_7796b12600c0b80f7d2bd7d8190cb6e9)
+        ;
+
+        
+    
+    
+            marker_05df625d8f2a31889dbd2b301691ed2e.bindTooltip(
+                `<div>
+                     Корпус №2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9cc48c420ee8a2a79a600a09565c0d5c = L.circle(
+                [58.604313, 49.665849],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 189.26094761569104, "stroke": true, "weight": 3}
+            ).addTo(map_ae57f5082226217a92f096804224819c);
+        
+    
+            circle_9cc48c420ee8a2a79a600a09565c0d5c.bindTooltip(
+                `<div>
+                     Расстояние до корпуса №1: 0.19 км
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_647b51440248698ac0cca5b3aba3c873 = L.marker(
+                [58.604294, 49.673736],
+                {}
+            ).addTo(map_ae57f5082226217a92f096804224819c);
+        
+    
+        var popup_a9e47c1f08ca8eb285c14dd073db4195 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb7ca72def25bb8adaf083863773f193 = $(`<div id="html_fb7ca72def25bb8adaf083863773f193" style="width: 100.0%; height: 100.0%;"><b>Корпус №3</b></div>`)[0];
+                popup_a9e47c1f08ca8eb285c14dd073db4195.setContent(html_fb7ca72def25bb8adaf083863773f193);
+            
+        
+
+        marker_647b51440248698ac0cca5b3aba3c873.bindPopup(popup_a9e47c1f08ca8eb285c14dd073db4195)
+        ;
+
+        
+    
+    
+            marker_647b51440248698ac0cca5b3aba3c873.bindTooltip(
+                `<div>
+                     Корпус №3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_87017a0fb4f33e3e97e7937e3ea9f87f = L.circle(
+                [58.604294, 49.673736],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 450.9947680789697, "stroke": true, "weight": 3}
+            ).addTo(map_ae57f5082226217a92f096804224819c);
+        
+    
+            circle_87017a0fb4f33e3e97e7937e3ea9f87f.bindTooltip(
+                `<div>
+                     Расстояние до корпуса №1: 0.45 км
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9de8b640d14396648be99ec5e41410ba = L.marker(
+                [58.60511, 49.618076],
+                {}
+            ).addTo(map_ae57f5082226217a92f096804224819c);
+        
+    
+        var popup_35dc6deb880c115fe8a6f34cf2eb9419 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_feeb9d926f32c600396e68f5bcf0f050 = $(`<div id="html_feeb9d926f32c600396e68f5bcf0f050" style="width: 100.0%; height: 100.0%;"><b>Корпус №6</b></div>`)[0];
+                popup_35dc6deb880c115fe8a6f34cf2eb9419.setContent(html_feeb9d926f32c600396e68f5bcf0f050);
+            
+        
+
+        marker_9de8b640d14396648be99ec5e41410ba.bindPopup(popup_35dc6deb880c115fe8a6f34cf2eb9419)
+        ;
+
+        
+    
+    
+            marker_9de8b640d14396648be99ec5e41410ba.bindTooltip(
+                `<div>
+                     Корпус №6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_02c0f232d158ae28b44bc8336062d17a = L.circle(
+                [58.60511, 49.618076],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2824.743370285688, "stroke": true, "weight": 3}
+            ).addTo(map_ae57f5082226217a92f096804224819c);
+        
+    
+            circle_02c0f232d158ae28b44bc8336062d17a.bindTooltip(
+                `<div>
+                     Расстояние до корпуса №1: 2.82 км
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f5c32c8bfea5bb4e5c6e80378062b12e = L.marker(
+                [58.604435, 49.617331],
+                {}
+            ).addTo(map_ae57f5082226217a92f096804224819c);
+        
+    
+        var popup_53e9647055056ef95a15f49737383346 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c89b842bd2b2f25f74f829ec683d6b2 = $(`<div id="html_4c89b842bd2b2f25f74f829ec683d6b2" style="width: 100.0%; height: 100.0%;"><b>Корпус №9</b></div>`)[0];
+                popup_53e9647055056ef95a15f49737383346.setContent(html_4c89b842bd2b2f25f74f829ec683d6b2);
+            
+        
+
+        marker_f5c32c8bfea5bb4e5c6e80378062b12e.bindPopup(popup_53e9647055056ef95a15f49737383346)
+        ;
+
+        
+    
+    
+            marker_f5c32c8bfea5bb4e5c6e80378062b12e.bindTooltip(
+                `<div>
+                     Корпус №9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6266fa2d4d51bcff4be23c91e956793a = L.circle(
+                [58.604435, 49.617331],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2861.567662264084, "stroke": true, "weight": 3}
+            ).addTo(map_ae57f5082226217a92f096804224819c);
+        
+    
+            circle_6266fa2d4d51bcff4be23c91e956793a.bindTooltip(
+                `<div>
+                     Расстояние до корпуса №1: 2.86 км
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_60d623286d837815251dc7abaeecf4e3 = L.marker(
+                [58.567359, 49.68633],
+                {}
+            ).addTo(map_ae57f5082226217a92f096804224819c);
+        
+    
+        var popup_cc6f6821c8f03c1972858478523ecbc1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb127fe3834fcba480ecc860160f43c8 = $(`<div id="html_bb127fe3834fcba480ecc860160f43c8" style="width: 100.0%; height: 100.0%;"><b>Корпус №15</b></div>`)[0];
+                popup_cc6f6821c8f03c1972858478523ecbc1.setContent(html_bb127fe3834fcba480ecc860160f43c8);
+            
+        
+
+        marker_60d623286d837815251dc7abaeecf4e3.bindPopup(popup_cc6f6821c8f03c1972858478523ecbc1)
+        ;
+
+        
+    
+    
+            marker_60d623286d837815251dc7abaeecf4e3.bindTooltip(
+                `<div>
+                     Корпус №15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_42ab1db0b2ce1c6d4a11ffd7eb62ca33 = L.circle(
+                [58.567359, 49.68633],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4088.0582970750747, "stroke": true, "weight": 3}
+            ).addTo(map_ae57f5082226217a92f096804224819c);
+        
+    
+            circle_42ab1db0b2ce1c6d4a11ffd7eb62ca33.bindTooltip(
+                `<div>
+                     Расстояние до корпуса №1: 4.09 км
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7ad22f2e99d08514e505c3eaaa432686 = L.marker(
+                [58.590902, 49.680078],
+                {}
+            ).addTo(map_ae57f5082226217a92f096804224819c);
+        
+    
+        var popup_c4ba03c0eb4b0d8d62392f7a35f44c9d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef58fc3c172fc11b857d9b179711120b = $(`<div id="html_ef58fc3c172fc11b857d9b179711120b" style="width: 100.0%; height: 100.0%;"><b>Корпус №17</b></div>`)[0];
+                popup_c4ba03c0eb4b0d8d62392f7a35f44c9d.setContent(html_ef58fc3c172fc11b857d9b179711120b);
+            
+        
+
+        marker_7ad22f2e99d08514e505c3eaaa432686.bindPopup(popup_c4ba03c0eb4b0d8d62392f7a35f44c9d)
+        ;
+
+        
+    
+    
+            marker_7ad22f2e99d08514e505c3eaaa432686.bindTooltip(
+                `<div>
+                     Корпус №17
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5bd98d88e3b57be436fb95a63d134e69 = L.circle(
+                [58.590902, 49.680078],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1522.3380272933168, "stroke": true, "weight": 3}
+            ).addTo(map_ae57f5082226217a92f096804224819c);
+        
+    
+            circle_5bd98d88e3b57be436fb95a63d134e69.bindTooltip(
+                `<div>
+                     Расстояние до корпуса №1: 1.52 км
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
